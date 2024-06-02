@@ -42,3 +42,14 @@ This script contains a function called **"create_table"** which takes the test/t
 First, **create_table** receives the previously-named datas' sources and reads them into corresponding data-frames. 
 Next, it combines the participant, activity, and test/train data into a single data-frame.
 Finally, it labels the data-frame appropriately, removes previously created data-frames, and returns the collated data-frame back to the main script.
+
+
+
+Reference
+================
+
+**[1]** Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
