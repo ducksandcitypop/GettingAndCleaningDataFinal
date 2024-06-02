@@ -13,19 +13,19 @@ setwd(datadir)
 #Create path names for training and test data
 
 test_data = "test/X_test.txt"
-test_feature_label = "test/y_test.txt"
+test_activity = "test/y_test.txt"
 test_participants = "test/subject_test.txt"
 activity_label = "activity_labels.txt"
 
 train_data = "train/X_train.txt"
-train_feature_label = "train/y_train.txt"
+train_activity = "train/y_train.txt"
 train_participants = "train/subject_train.txt"
 
 #Create data table for test, then train
 #Compile test and train data tables into one table
 
-data1 <- create_table(test_data, test_feature_label, test_participants)
-data2 <- create_table(train_data, train_feature_label, train_participants)
+data1 <- create_table(test_data, test_activity, test_participants)
+data2 <- create_table(train_data, train_activity, train_participants)
 full_data_tbl <- rbind(data1,data2)
 
 #Retrieve legend for activity values
