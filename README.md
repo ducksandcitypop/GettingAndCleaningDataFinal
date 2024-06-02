@@ -32,7 +32,7 @@ This is the main script of this project. It performs several tasks:
 7. Cleans up old, unused data and resets the working directory.
 8. Converts **full_data_tbl** into a tibble-frame called **tibble_data_tbl**. Groups by **(Participant, Activity)**.
 9. Using **dplyr::summarize, across, everything**, creates a tidy tibble-frame called **tidy_tbl** which contains the mean value of all measurements in **full_data_tbl** along each grouping. This was done by implementing **summarize** on **across(everything(),~mean(.x),...)** and using **across**'s *.names* parameter to appropriately label the columns of the computed data.
-10. Removes **tibble_data_tbl** and views **full_data_tbl** and **tidy_data_tbl**.
+10. Removes **tibble_data_tbl** and views **full_data_tbl** and **tidy_tbl**.
 
 
 ## create_table.R:
