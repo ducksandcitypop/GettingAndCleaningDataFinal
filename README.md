@@ -11,8 +11,6 @@ In this project, we used the HAR Dataset (Human Acitivty Recognition Using Smart
   3. GitHub contains a code book that modifies and updates the available codebooks with the data to indicate all the variables and summaries calculated, along with units,   and any other relevant information.
   4. The README that explains the analysis files is clear and understandable.
   5. The work submitted for this project is the work of the student who submitted it.
-  
-==================================================
 
 Script Explanation
 ==================================================
@@ -33,7 +31,6 @@ This is the main script of this project. It performs several tasks:
 8. Converts **full_data_tbl** into a tibble-frame called **tibble_data_tbl**. Groups by **(Participant, Activity)**.
 9. Using **dplyr::summarize, across, everything**, creates a tidy tibble-frame called **tidy_tbl** which contains the mean value of all measurements in **full_data_tbl** along each grouping. This was done by implementing **summarize** on **across(everything(),~mean(.x),...)** and using **across**'s *.names* parameter to appropriately label the columns of the computed data.
 10. Removes **tibble_data_tbl** and views **full_data_tbl** and **tidy_tbl**.
-
 
 ## create_table.R:
 
